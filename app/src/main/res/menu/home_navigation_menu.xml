@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/home_menu_movies"
+        android:icon="@drawable/ic_movies"
+        android:title="@string/movies"
+        android:titleCondensed="Mo" />
+    <item
+        android:id="@+id/home_menu_tv_shows"
+        android:icon="@drawable/ic_tv"
+        android:title="@string/tv_shows" />
+    <item
+        android:id="@+id/home_menu_coming_soon"
+        android:icon="@drawable/ic_coming_soon"
+        android:title="@string/coming_soon" />
+    <item
+        android:id="@+id/home_menu_like"
+        android:icon="@drawable/ic_favorite_on"
+        android:title="@string/like_it" />
+</menu>

@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">SearchTV</string>
+    <string name="movies">Movies</string>
+    <string name="tv_shows">TV Shows</string>
+    <string name="watch">Watch</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="caratula">Carátula</string>
+    <string name="coming_soon">Coming soon</string>
+    <string name="like_it">Like it!</string>
+    <string name="star">star</string>
+    <string name="rank">rank</string>
+</resources>
