@@ -25,4 +25,7 @@ interface LikesDao {
 
     @Delete
     suspend fun deleteLike(likeEntity: LikeEntity):Int
+
+    @Query("DELETE FROM LikeEntityTable WHERE id = :id")
+    suspend fun deleteLikeById(id: String):Int
 }

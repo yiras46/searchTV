@@ -25,7 +25,7 @@ object LikesProvider {
     }
 
     suspend fun deleteLike(likeEntity: LikeEntity) = withContext(Dispatchers.IO){
-        val result = SearchTvApplication.database.likesDao().deleteLike(likeEntity)
+        val result = SearchTvApplication.database.likesDao().deleteLikeById(likeEntity.id)
         if(result <= 0) throw LikeExceptions(TypeError.DELETE)
     }
 
