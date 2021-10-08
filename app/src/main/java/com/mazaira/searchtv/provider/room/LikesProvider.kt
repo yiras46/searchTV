@@ -1,7 +1,7 @@
 package com.mazaira.searchtv.provider.room
 
 import androidx.lifecycle.LiveData
-import androidx.lifecycle.map
+import androidx.lifecycle.liveData
 import com.mazaira.searchtv.SearchTvApplication
 import com.mazaira.searchtv.model.domain.LikeEntity
 import com.mazaira.searchtv.util.exceptions.LikeExceptions
@@ -10,6 +10,10 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 
 object LikesProvider {
+
+    val likes: LiveData<MutableList<LikeEntity>> = liveData {
+        emitSource(SearchTvApplication.database.likesDao().getLikesLiveData())
+    }
 
     suspend fun getAllLikes(): List<LikeEntity> {
         return SearchTvApplication.database.likesDao().getAllLikes()

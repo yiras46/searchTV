@@ -1,10 +1,9 @@
 package com.mazaira.searchtv.usecases.movies
 
-import com.mazaira.searchtv.model.domain.LikeEntity
 import com.mazaira.searchtv.model.domain.MostPopularDetail
 import com.mazaira.searchtv.model.domain.SearchResult
-import com.mazaira.searchtv.provider.room.LikesProvider
 import com.mazaira.searchtv.provider.api.ImdbProvider
+import com.mazaira.searchtv.provider.room.LikesProvider
 import com.mazaira.searchtv.usecases.base.BaseViewModel
 
 class MoviesViewModel : BaseViewModel() {

@@ -1,10 +1,15 @@
 package com.mazaira.searchtv.provider.room
 
+import androidx.lifecycle.LiveData
 import androidx.room.*
 import com.mazaira.searchtv.model.domain.LikeEntity
 
 @Dao
 interface LikesDao {
+
+
+    @Query("SELECT * FROM LikeEntityTable")
+    fun getLikesLiveData() : LiveData<MutableList<LikeEntity>>
 
     @Query("SELECT * FROM LikeEntityTable")
     suspend fun getAllLikes() : List<LikeEntity>

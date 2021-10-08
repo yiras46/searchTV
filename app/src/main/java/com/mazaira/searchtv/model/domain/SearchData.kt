@@ -17,6 +17,7 @@ data class SearchResult(
     @SerializedName("description") val description: String
 )
 
+@Deprecated("for the moment it is not necessary")
 private enum class SearchType(id: Int) {
     Title(1),
     Movie(2),

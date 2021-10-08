@@ -10,7 +10,6 @@ import com.mazaira.searchtv.databinding.FragmentTvShowsBinding
 import com.mazaira.searchtv.model.domain.LikeEntity
 import com.mazaira.searchtv.usecases.common.ListenerRecyclerViewAdapter
 import com.mazaira.searchtv.usecases.common.MostPopularDataRecyclerViewAdapter
-import com.mazaira.searchtv.usecases.likeit.LikeItRouter
 
 
 class TvShowsFragment : Fragment(), ListenerRecyclerViewAdapter {

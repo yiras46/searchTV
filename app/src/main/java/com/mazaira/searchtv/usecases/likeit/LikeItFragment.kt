@@ -19,6 +19,7 @@ class LikeItFragment : Fragment(), ListenerRecyclerViewAdapter {
     // Properties
     private var _binding: FragmentLikeItBinding? = null
     private val binding get() = _binding!!
+    private lateinit var mAdapter: LikesRecyclerViewAdapter
 
     lateinit var viewModel: LikeItViewModel
 
@@ -45,23 +46,19 @@ class LikeItFragment : Fragment(), ListenerRecyclerViewAdapter {
 
         // Setup
         setup()
-        reloadData()
     }
 
 
     private fun setup() {
-        viewModel.loading.observe(viewLifecycleOwner, { loading ->
 
-            if (!loading) {
-                _binding!!.progressLoading.visibility = View.GONE
-                _binding!!.recyclerViewLikes.adapter = LikesRecyclerViewAdapter(viewModel.likes)
-            } else {
-                _binding!!.progressLoading.visibility = View.VISIBLE
-            }
+        mAdapter = LikesRecyclerViewAdapter()
+        _binding!!.recyclerViewLikes.apply {
+            adapter = mAdapter
+            setHasFixedSize(true)
+        }
+
+        viewModel.likesLiveData.observe(viewLifecycleOwner, {
+            mAdapter.submitList(it)
         })
-    }
-
-    fun reloadData() {
-        viewModel.likes()
     }
 }

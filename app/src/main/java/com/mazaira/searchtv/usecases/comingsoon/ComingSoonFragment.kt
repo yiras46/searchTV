@@ -24,7 +24,6 @@ class ComingSoonFragment : Fragment(), ListenerRecyclerViewAdapter {
     private lateinit var viewModel: ComingSoonViewModel
 
     // Initialization
-
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?

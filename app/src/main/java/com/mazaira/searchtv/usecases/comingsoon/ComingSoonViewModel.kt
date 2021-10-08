@@ -13,7 +13,7 @@ class ComingSoonViewModel:BaseViewModel() {
 
     fun comingSoon() {
         executeAction {
-            val comingMovies = ImdbProvider.conmingSoon().items
+            val comingMovies = ImdbProvider.comingSoon().items
 
             //Find TVShow at Room and checkit with like
             LikesProvider.getAllLikes().let { likes ->

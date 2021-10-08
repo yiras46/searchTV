@@ -1,6 +1,5 @@
 package com.mazaira.searchtv.usecases.tvshows
 
-import com.mazaira.searchtv.model.domain.LikeEntity
 import com.mazaira.searchtv.model.domain.MostPopularDetail
 import com.mazaira.searchtv.model.domain.SearchResult
 import com.mazaira.searchtv.provider.api.ImdbProvider

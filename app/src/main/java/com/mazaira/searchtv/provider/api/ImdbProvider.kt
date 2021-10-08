@@ -85,7 +85,7 @@ object ImdbProvider {
         return apiService.mostPopularTVs()
     }
 
-    suspend fun conmingSoon():NewData{
+    suspend fun comingSoon():NewData{
         val apiService = getRetofit(ImdbServices.COMING_SOON).create(ImdbAPIService::class.java)
         return apiService.comingSoon()
     }

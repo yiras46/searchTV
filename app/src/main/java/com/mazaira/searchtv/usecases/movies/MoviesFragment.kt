@@ -9,10 +9,8 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import com.mazaira.searchtv.databinding.FragmentMoviesBinding
 import com.mazaira.searchtv.model.domain.LikeEntity
-import com.mazaira.searchtv.model.domain.MostPopularDetail
 import com.mazaira.searchtv.usecases.common.ListenerRecyclerViewAdapter
 import com.mazaira.searchtv.usecases.common.MostPopularDataRecyclerViewAdapter
-import com.orhanobut.logger.Logger
 
 
 class MoviesFragment : Fragment(), ListenerRecyclerViewAdapter {

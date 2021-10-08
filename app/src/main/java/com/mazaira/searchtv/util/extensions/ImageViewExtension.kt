@@ -7,6 +7,7 @@ import com.bumptech.glide.load.engine.DiskCacheStrategy
 import com.mazaira.searchtv.R
 import com.squareup.picasso.Picasso
 
+@Deprecated("Excesivo consumo de CPU o.0", ReplaceWith("loadImageWithGlide"))
 fun ImageView.loadImage(url:String?) {
 
     url?.let {
