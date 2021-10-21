@@ -1,2 +1,2 @@
 # searchTV
-Sample android app with MVVM+Router, Coroutines, Room &amp; Imdb API
+Sample android app with MVVM+Router (No databinding), Coroutines, Room &amp; Imdb API
